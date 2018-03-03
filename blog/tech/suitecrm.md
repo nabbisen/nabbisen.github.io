@@ -1,21 +1,39 @@
 
-`wget https://suitecrm.com/files/156/SuiteCRM-7.8/217/SuiteCRM-7.8.15.zip`
-`unzip SuiteCRM-7.8.15.zip`
-`mv SuiteCRM-7.8.15 suitecrm`
-`rm SuiteCRM-7.8.15.zip`
+Get latest:
 
-`sudo chown -R nginx:nginx suitecrm`
-`cd suitecrm`
-`sudo chmod 766 custom`
-`sudo chmod 755 cache`
-`sudo chmod 755 modules`
+`wget https://suitecrm.com/files/160/SuiteCRM-7.10/224/SuiteCRM-7.10.zip`
+
+or lts:
+
+`wget https://suitecrm.com/files/156/SuiteCRM-7.8/217/SuiteCRM-7.8.15.zip`
+
+```
+unzip SuiteCRM-*.zip
+rm SuiteCRM-*.zip
+
+mv SuiteCRM-* suitecrm
+```
+
+```
+sudo chown -R nginx:nginx suitecrm
+cd suitecrm
+sudo chmod 766 custom
+sudo chmod 755 cache
+sudo chmod 755 modules
+```
 
 `sudo mysql -u root -p`
-`create database suitecrm_db;`
-`grant all privileges to suitecrm.* on suitecrm;`
-`\q`
 
+```
+create database suitecrm_db;
+create user suitecrm identified by '';
+grant all privileges on suitecrm.* to suitecrm;
+\q
+```
 
+install.php
+php7-xml
+php7/php.ini -- upload file size 8M (at least more than 6M)
 
 https://crowdin.com/project/suitecrmtranslations/ja
 Download: ja.zip
@@ -38,3 +56,5 @@ system locale
 logout
 
 done
+
+php7-iconv
