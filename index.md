@@ -59,3 +59,7 @@ I'm
 - Rust
 - C#
 - Excel VBA
+
+---
+
+[My Blog](blog)
