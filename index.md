@@ -1,37 +1,61 @@
-## Welcome to GitHub Pages
+### Hello there!
 
-You can use the [editor on GitHub](https://github.com/nabbisen/nabbisen.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+#### (Greetings)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### My name is
 
-### Markdown
+# Heddi Nabbssen.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I'm
 
-```markdown
-Syntax highlighted code block
+## an ICT designer and developer.
 
-# Header 1
-## Header 2
-### Header 3
+[my GitHub page](https://github.com/nabbisen)
 
-- Bulleted
-- List
+#### (Places)
 
-1. Numbered
-2. List
+### I was born and raised
 
-**Bold** and _Italic_ and `Code` text
+## in Japan.
 
-[Link](url) and ![Image](src)
-```
+#### (Languages)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### I speak
 
-### Jekyll Themes
+## Japanese, English.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nabbisen/nabbisen.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### I am learning
 
-### Support or Contact
+## Spanish, Danish, Arabic, Urdu, ...
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#### (Interests)
+
+### What I like is
+
+- Travel
+- Reading
+- Climbing
+- Aikido
+- Bycicle
+- Programming
+- PC Assembly 
+
+#### (My Skillsets)
+
+- Windows
+- OpenBSD
+- FreeBSD
+- DrangonflyBSD
+- Linux Mint
+- Ubuntu
+- Debian
+- CentOS
+- Fedora
+- Solus
+
+- Python
+- Go
+- Javascript
+- Rust
+- C#
+- Excel VBA
