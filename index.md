@@ -43,15 +43,10 @@ I'm
 #### (My Skillsets)
 
 - Windows
-- OpenBSD
-- FreeBSD
-- DrangonflyBSD
-- Linux Mint
-- Ubuntu
-- Debian
-- CentOS
-- Fedora
-- Solus
+- OpenBSD, FreeBSD, DrangonflyBSD
+- Ubuntu, Debian, Linux Mint
+- CentOS, Fedora
+- Manjaro, Solus
 
 - Python
 - Go
