@@ -20,12 +20,14 @@ Create a Rectangle
 
 ![03-rectangle-01](assets/bizcard-by-inkscape-03-rectangle-01.png "pic")
 
-Modify it: width / height = 55 mm / 91 mm
-set it: X / Y = 3.000 mm / 3.000 mm
+Select it
 
 ![03-rectangle-02](assets/bizcard-by-inkscape-03-rectangle-02.png "pic")
 
-Object menu: object to guide
+Modify it: width / height = 55 mm / 91 mm
+Set it: X / Y = 3.000 mm / 3.000 mm
+
+Click Object menu "object to guide"
 
 ![03-rectangle-03](assets/bizcard-by-inkscape-03-rectangle-03.png "pic")
 
