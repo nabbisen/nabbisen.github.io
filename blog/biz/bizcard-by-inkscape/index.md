@@ -20,16 +20,16 @@ Create a Rectangle
 
 ![03-rectangle-01](assets/bizcard-by-inkscape-03-rectangle-01.png "pic")
 
+![03-rectangle-02](assets/bizcard-by-inkscape-03-rectangle-02.png "pic")
+
 Select it
 
-![03-rectangle-02](assets/bizcard-by-inkscape-03-rectangle-02.png "pic")
+![03-rectangle-03](assets/bizcard-by-inkscape-03-rectangle-03.png "pic")
 
 Modify it: width / height = 55 mm / 91 mm
 Set it: X / Y = 3.000 mm / 3.000 mm
 
 Click Object menu "object to guide"
-
-![03-rectangle-03](assets/bizcard-by-inkscape-03-rectangle-03.png "pic")
 
 ![04-guide-outer-01](assets/bizcard-by-inkscape-04-guide-outer-01.png "pic")
 ![04-guide-outer-02](assets/bizcard-by-inkscape-04-guide-outer-02.png "pic")
