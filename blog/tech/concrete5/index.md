@@ -36,6 +36,8 @@ Restart maridb service
 
 # Set up Nginx
 
+Implement ssl/tls using certbot
+
 # Set permission
 
 ```
