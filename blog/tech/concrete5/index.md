@@ -46,3 +46,15 @@ sudo chmod -R 755 concrete5/application/config
 sudo chmod -R 755 concrete5/packages
 sudo chmod -R 755 concrete5/updates
 ```
+
+# Install via Web browser
+
+![Concrete5 install](assets/concrete5-install-01.png "")
+![Concrete5 install](assets/concrete5-install-02.png "")
+![Concrete5 install](assets/concrete5-install-03.png "")
+![Concrete5 install](assets/concrete5-install-04.png "")
+![Concrete5 install](assets/concrete5-install-05.png "")
+![Concrete5 install](assets/concrete5-install-06.png "")
+![Concrete5 install](assets/concrete5-install-07.png "")
+![Concrete5 install](assets/concrete5-install-08.png "")
+![Concrete5 install](assets/concrete5-install-09.png "")
