@@ -111,4 +111,8 @@ https://docs.gitea.io/en-us/install-from-source/
 ```
 go get -d -u code.gitea.io/gitea
 cd $GOPATH/src/code.gitea.io/gitea
+
+create database gitea;
+create user gitea identified by '***';
+grant all privileges on gitea.* to gitea;
 ```
