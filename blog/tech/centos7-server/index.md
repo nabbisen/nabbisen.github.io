@@ -74,3 +74,14 @@ passwd root
 
 exit
 ```
+
+```
+vim .bash_profile
+```
+
+Add lines:
+
+```
+export GOROOT=$HOME/go
+export PATH=$PATH:$GOROOT/bin
+```
