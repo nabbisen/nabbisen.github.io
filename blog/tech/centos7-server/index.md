@@ -57,9 +57,18 @@ x ```
 yum install vim
 
 yum install git
-
+```
+```
 yum install mariadb-server
 systemctl enable mariadb
+
+vim /etc/my.cnf.d/server.cnf
+# [mariadb]
+# character-set-server = utf8mb4
+
+vim /etc/my.cnf.d/client.cnf
+# [client-mariadb]
+# default-character-set = utf8mb4
 ```
 
 ```
