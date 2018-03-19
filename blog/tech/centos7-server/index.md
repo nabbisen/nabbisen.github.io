@@ -55,8 +55,11 @@ x ```
 
 ```
 yum install vim
+
 yum install git
+
 yum install mariadb-server
+systemctl enable mariadb
 ```
 
 ```
