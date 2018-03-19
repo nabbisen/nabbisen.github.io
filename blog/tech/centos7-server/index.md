@@ -34,7 +34,8 @@ firewall-cmd --reload
 yum install wget httpd
 ```
 
-Nginx armhf package does not exists:
+```
+x Nginx armhf package does not exists:
 x According to [public tutorial](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
 x 
 x ```
@@ -50,9 +51,21 @@ x baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
 x gpgcheck=0
 x enabled=1
 x ```
-
-
+```
 
 ```
-yum install golang git
+yum install vim
+yum install git
+yum install golang
+```
+
+```
+useradd ***
+passwd ***
+usermod -aG wheel ***
+# check
+visudo
+
+# Disable root to login via ssh
+vi /etc/ssh/sshd_config
 ```
