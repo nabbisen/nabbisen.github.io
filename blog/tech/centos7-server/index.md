@@ -54,5 +54,5 @@ x ```
 
 
 ```
-yum install golang
+yum install golang git
 ```
