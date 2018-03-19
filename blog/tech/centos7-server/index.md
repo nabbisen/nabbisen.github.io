@@ -19,3 +19,11 @@ localectl set-locale LANG=ja_JP.utf8
 localectl
 ```
 
+```
+# set up ssh
+vi /etc/ssh/sshd_config 
+systemctl sshd restart
+
+firewall-cmd --add-port=***/tcp --permanent
+firewall-cmd --list-all
+```
