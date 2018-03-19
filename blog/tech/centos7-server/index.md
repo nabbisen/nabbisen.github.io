@@ -56,7 +56,7 @@ x ```
 ```
 yum install vim
 yum install git
-yum install golang
+yum install mariadb-server
 ```
 
 ```
@@ -76,10 +76,12 @@ exit
 ```
 
 ```
-vim .bash_profile
+sudo yum install golang
+
+vim ~/.bash_profile
 ```
 
-Add lines:
+Write:
 
 ```
 export GOROOT=$HOME/go
@@ -87,5 +89,14 @@ export PATH=$PATH:$GOROOT/bin
 ```
 
 ```
-source .bash_profile
+source ~/.bash_profile
+```
+
+## Gitea
+
+https://docs.gitea.io/en-us/install-from-source/
+
+```
+go get -d -u code.gitea.io/gitea
+cd $GOPATH/src/code.gitea.io/gitea
 ```
