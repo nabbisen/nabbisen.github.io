@@ -25,5 +25,7 @@ vi /etc/ssh/sshd_config
 systemctl sshd restart
 
 firewall-cmd --add-port=***/tcp --permanent
+# check
 firewall-cmd --list-all
+firewall-cmd --reload
 ```
