@@ -85,3 +85,7 @@ Add lines:
 export GOROOT=$HOME/go
 export PATH=$PATH:$GOROOT/bin
 ```
+
+```
+source .bash_profile
+```
