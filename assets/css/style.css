@@ -1,3 +1,12 @@
 html body {
+    text-align: center;
+}
+
+.swiper-slide img {
+    width: 80vw;
+}
+
+.swiper-slide ul {
+    text-align: left;
 }
 
