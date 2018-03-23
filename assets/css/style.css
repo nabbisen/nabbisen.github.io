@@ -1,9 +1,10 @@
 html body {
     text-align: center;
+    height: 100vh;
 }
 
 .swiper-slide img {
-    width: 70vw;
+    height: 40%;
 }
 
 .swiper-slide ul {
