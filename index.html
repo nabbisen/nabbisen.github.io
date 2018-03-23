@@ -29,7 +29,7 @@
                         <li><i class="far fa-edit"></i>https://nabbisen.github.com/blog</li>
                     </ul>
                 </div>
-                <div id="skill" class="columns swiper-slide sr-target">
+                <div id="overview" class="columns swiper-slide sr-target">
                     <h2>Heddi Nabbisen</h2>
                     <h3>What I am</h3>
                     <img class="circle sr" src="assets/img/my-dream.jpg">
@@ -53,7 +53,7 @@
                     <img class="circle sr" src="assets/img/be-happy.jpg">
                     <div class="">...</div>
                 </div>
-                <div id="skill" class="columns swiper-slide sr-target">
+                <div id="recent" class="columns swiper-slide sr-target">
                     <h2>Heddi Nabbisen</h2>
                     <h3>Thank you very much</h3>
                     <img class="circle sr" src="assets/img/sunset-mountains.jpg">
@@ -99,8 +99,12 @@
             });
             
             window.sr = ScrollReveal({ reset: false, });
-            sr.reveal('.sr', { duration: 2000, container: '#home' }, 50);
-            sr.reveal('.sr', { duration: 2000, container: '#mind' }, 50);
+            sr.reveal('.sr-target', { duration: 2000, container: '#home' }, 50);
+            sr.reveal('.sr-target', { duration: 2000, container: '#overview' }, 50);
+            sr.reveal('.sr-target', { duration: 2000, container: '#mind' }, 50);
+            sr.reveal('.sr-target', { duration: 2000, container: '#history' }, 50);
+            sr.reveal('.sr-target', { duration: 2000, container: '#skill' }, 50);
+            sr.reveal('.sr-target', { duration: 2000, container: '#recent' }, 50);
         });
     </script>
 </body>
