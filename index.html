@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.1/spectre.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -20,33 +19,33 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div id="home" class="swiper-slide">
-                    <h3>Homepage</h3>
-                    <img class="animated fadeInDown" src="https://goo.gl/iKMzN5">
-                    <ul>
-                        <li class="animated fadeInUp" style="animation-delay: 0.5s;"><i class="fas fa-map-marker-alt"></i>https://nabekobo.com</li>
-                        <li class="animated fadeInUp" style="animation-delay: 0.6s;"><i class="far fa-envelope"></i>heddi.nabbisen@gmail.com</li>
-                        <li class="animated fadeInUp" style="animation-delay: 0.7s;"><i class="fab fa-github"></i>https://github.com/nabbisen</li>
-                        <li class="animated fadeInUp" style="animation-delay: 0.8s;"><i class="far fa-edit"></i>https://nabbisen.github.com/blog</li>
+                    <h3 class="sr">Homepage</h3>
+                    <img class="sr" src="https://goo.gl/iKMzN5">
+                    <ul class="sr">
+                        <li><i class="fas fa-map-marker-alt"></i>https://nabekobo.com</li>
+                        <li><i class="far fa-envelope"></i>heddi.nabbisen@gmail.com</li>
+                        <li><i class="fab fa-github"></i>https://github.com/nabbisen</li>
+                        <li><i class="far fa-edit"></i>https://nabbisen.github.com/blog</li>
                     </ul>
                 </div>
                 <div id="mind" class="swiper-slide">
                     <h3>Mind & Ideas</h3>
-                    <img class="animated fadeInDown" src="https://goo.gl/iKMzN5">
-                    <div class="">...</div>
+                    <img src="https://goo.gl/iKMzN5">
+                    <div>...</div>
                 </div>
                 <div id="history" class="swiper-slide">
                     <h3>Footstamps</h3>
-                    <img class="animated fadeInDown" src="https://goo.gl/iKMzN5">
+                    <img src="https://goo.gl/iKMzN5">
                     <div class="animated fadeInUp">...</div>
                 </div>
                 <div id="skill" class="swiper-slide">
                     <h3>Skill</h3>
-                    <img class="animated fadeInDown" src="https://goo.gl/iKMzN5">
+                    <img src="https://goo.gl/iKMzN5">
                     <div class="">...</div>
                 </div>
                 <div id="skill" class="swiper-slide">
                     <h3>Recent approach</h3>
-                    <img class="animated fadeInDown" src="https://goo.gl/iKMzN5">
+                    <img src="https://goo.gl/iKMzN5">
                     <div class="">...</div>
                 </div>
             </div>
@@ -75,9 +74,9 @@
                 loop: true,
             });
             
-            window.sr = ScrollReveal();
-            sr.reveal('#home');
-            sr.reveal('#mind');
+            window.sr = ScrollReveal({ reset: true, });
+            sr.reveal('.sr', { duration: 2000, container: '#home' }, 50);
+            sr.reveal('.sr', { duration: 2000, container: '#mind' }, 50);
         });
     </script>
 </body>
