@@ -10,3 +10,6 @@ html body {
     text-align: left;
 }
 
+p ul, pre {
+    padding-top: 0.4em;
+}
