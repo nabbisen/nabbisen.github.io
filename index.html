@@ -18,46 +18,58 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div id="home" class="swiper-slide sr-target">
-                    <h2>Heddi Nabbisen</h2>
-                    <h3>Hello, World.</h3>
-                    <img class="circle" src="assets/img/hello-desert.jpg">
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i>https://nabekobo.com</li>
-                        <li><i class="far fa-envelope"></i>heddi.nabbisen@gmail.com</li>
-                        <li><i class="fab fa-github"></i>https://github.com/nabbisen</li>
-                        <li><i class="far fa-edit"></i>https://nabbisen.github.com/blog</li>
-                    </ul>
+                <div id="home" class="swiper-slide">
+		    <div class="sr-target">
+                        <h2>Heddi Nabbisen</h2>
+                        <h3>Hello, World.</h3>
+                        <img class="circle" src="assets/img/hello-desert.jpg">
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i>https://nabekobo.com</li>
+                            <li><i class="far fa-envelope"></i>heddi.nabbisen@gmail.com</li>
+                            <li><i class="fab fa-github"></i>https://github.com/nabbisen</li>
+                            <li><i class="far fa-edit"></i>https://nabbisen.github.com/blog</li>
+                        </ul>
+		    </div>
                 </div>
-                <div id="overview" class="swiper-slide sr-target">
-                    <h2>Heddi Nabbisen</h2>
-                    <h3>What I am</h3>
-                    <img class="circle sr" src="assets/img/my-dream.jpg">
-                    <div class="">...</div>
+                <div id="overview" class="swiper-slide">
+		    <div class="sr-target">
+                        <h2>Heddi Nabbisen</h2>
+                        <h3>What I am</h3>
+                        <img class="circle sr" src="assets/img/my-dream.jpg">
+                        <div class="">...</div>
+		    </div>
                 </div>
-                <div id="mind" class="swiper-slide sr-target">
-                    <h2>Heddi Nabbisen</h2>
-                    <h3>Mind & Ideas</h3>
-                    <img class="circle sr" src="assets/img/lie-down-on-desert.jpg">
-                    <div>...</div>
+                <div id="mind" class="swiper-slide">
+		    <div class="sr-target">
+                        <h2>Heddi Nabbisen</h2>
+                        <h3>Mind & Ideas</h3>
+                        <img class="circle sr" src="assets/img/lie-down-on-desert.jpg">
+                        <div>...</div>
+		    </div>
                 </div>
-                <div id="history" class="swiper-slide sr-target">
-                    <h2>My history</h2>
-                    <h3>Footstamps</h3>
-                    <img class="circle sr" src="assets/img/restaurant.jpg">
-                    <div class="animated fadeInUp">...</div>
+                <div id="skill" class="swiper-slide">
+		    <div class="sr-target">
+                        <h2>Heddi Nabbisen</h2>
+                        <h3>Recent approach</h3>
+                        <img class="circle sr" src="assets/img/be-happy.jpg">
+                        <div class="">...</div>
+		    </div>
                 </div>
-                <div id="skill" class="swiper-slide sr-target">
-                    <h2>Heddi Nabbisen</h2>
-                    <h3>Recent approach</h3>
-                    <img class="circle sr" src="assets/img/be-happy.jpg">
-                    <div class="">...</div>
+                <div id="history" class="swiper-slide">
+		    <div class="sr-target">
+                        <h2>My history</h2>
+                        <h3>Footstamps</h3>
+                        <img class="circle sr" src="assets/img/restaurant.jpg">
+                        <div class="animated fadeInUp">...</div>
+		    </div>
                 </div>
-                <div id="recent" class="swiper-slide sr-target">
-                    <h2>Heddi Nabbisen</h2>
-                    <h3>Thank you very much</h3>
-                    <img class="circle sr" src="assets/img/sunset-mountains.jpg">
-                    <div class="">...</div>
+                <div id="recent" class="swiper-slide">
+		    <div class="sr-target">
+                        <h2>Heddi Nabbisen</h2>
+                        <h3>Thank you very much</h3>
+                        <img class="circle sr" src="assets/img/sunset-mountains.jpg">
+                        <div class="">...</div>
+		    </div>
                 </div>
             </div>
             <!-- If we need pagination -->
@@ -77,11 +89,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function(){
+	    var slides = ['home', 'overview', 'mind', 'skill', 'history', 'recent'];
+            window.sr = ScrollReveal({ reset: true, });
+	    
             //initialize swiper when document ready
-            var mySwiper = new Swiper ('.swiper-container', {
+            var swpr = new Swiper ('.swiper-container', {
                 // Optional parameters
                 direction: 'horizontal',
                 loop: true,
+		effect: 'slide',
                 
                 // If we need pagination
                 pagination: {
@@ -97,14 +113,14 @@
                   el: '.swiper-scrollbar',
                 },
             });
-            
-            window.sr = ScrollReveal({ reset: false, });
-            sr.reveal('.sr-target', { duration: 2000, container: '#home' }, 50);
-            sr.reveal('.sr-target', { duration: 2000, container: '#overview' }, 50);
-            sr.reveal('.sr-target', { duration: 2000, container: '#mind' }, 50);
-            sr.reveal('.sr-target', { duration: 2000, container: '#history' }, 50);
-            sr.reveal('.sr-target', { duration: 2000, container: '#skill' }, 50);
-            sr.reveal('.sr-target', { duration: 2000, container: '#recent' }, 50);
+	    swpr.on('init', function() {
+	        var slide = slides[swpr.activeIndex];
+                sr.reveal('#' + slide + ' .sr-target', { duration: 2000, container: '#' + slide }, 50);
+	    });
+	    swpr.on('slideChangeTransitionStart', function() {
+	        var slide = slides[swpr.activeIndex];
+                sr.reveal('#' + slide + ' .sr-target', { duration: 2000, container: '#' + slide }, 50);
+	    });
         });
     </script>
 </body>
