@@ -10,6 +10,6 @@ html body {
     text-align: left;
 }
 
-p ul, pre {
-    margin-top: 0.4em;
+.swiper-slide p ul, .swiper-slide p pre {
+    padding-top: 0.4em;
 }
