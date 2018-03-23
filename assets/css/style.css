@@ -8,8 +8,5 @@ html body {
 
 .swiper-slide ul {
     text-align: left;
-}
-
-.swiper-slide ul, .swiper-slide pre {
     margin-top: -0.5em;
 }
