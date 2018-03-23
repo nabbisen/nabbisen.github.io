@@ -114,12 +114,12 @@
                 },
             });
 	    swpr.on('init', function() {
-	        var slide = slides[swpr.activeIndex];
-                sr.reveal('#' + slide + ' .sr-target', { duration: 2000, container: '#' + slide }, 50);
+	        var slide = slides[swpr.initialSlide];
+                sr.reveal('#' + slide + ' .sr-target', { duration: 3000, container: '#' + slide }, 50);
 	    });
 	    swpr.on('slideChangeTransitionStart', function() {
 	        var slide = slides[swpr.activeIndex];
-                sr.reveal('#' + slide + ' .sr-target', { duration: 2000, container: '#' + slide }, 50);
+                sr.reveal('#' + slide + ' .sr-target', { duration: 3000, container: '#' + slide }, 50);
 	    });
         });
     </script>
