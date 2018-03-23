@@ -11,5 +11,5 @@ html body {
 }
 
 .swiper-slide p ul, .swiper-slide p pre {
-    padding-top: 0.4em;
+    margin-top: 0.4em;
 }
