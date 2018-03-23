@@ -35,31 +35,38 @@
                         <h2>Heddi Nabbisen</h2>
                         <h3>What I am</h3>
                         <img class="circle" src="assets/img/my-dream.jpg">
-                        <div class="">...</div>
+                        <ul class="columns column col-5 col-mx-auto">
+                            <li>ICT designer & programmer</li>
+                            <li>Business strategist</li>
+                            <li>Trailer of possibility & traveler</li>
+                        </ul>
                     </div>
                     <div id="mind" class="swiper-slide">
                         <h2>Heddi Nabbisen</h2>
                         <h3>Mind & Ideas</h3>
                         <img class="circle" src="assets/img/lie-down-on-desert.jpg">
-                        <div>...</div>
+                        <p>I believe we'll make our sociery so much better.</p>
+                        <p>I also do every life is beautiful in its own way.</p>
                     </div>
                     <div id="skill" class="swiper-slide">
                         <h2>Heddi Nabbisen</h2>
                         <h3>Skillset</h3>
                         <img class="circle" src="assets/img/be-happy.jpg">
-                        <div class="">...</div>
+			<p>Server building, Network connection, Making application and supplying some solution<br>are avairable.</p>
+			<pre>OS: <code>Linux, FreeBSD, OpenBSD</code> - Lang: <code>Python, Go, Rust, Haskell</code> - App: <code>Web, Mobile</code></pre>
                     </div>
                     <div id="history" class="swiper-slide">
                         <h2>Heddi Nabbisen</h2>
                         <h3>History</h3>
                         <img class="circle" src="assets/img/restaurant.jpg">
-                        <div class="animated fadeInUp">...</div>
+			<p>From Japan with appreciation;</p>
+                        <p>To the world with hope.</p>
                     </div>
                     <div id="recent" class="swiper-slide">
                         <h2>Heddi Nabbisen</h2>
-                        <h3>Thank you very much</h3>
+                        <h3>Recently</h3>
                         <img class="circle" src="assets/img/sunset-mountains.jpg">
-                        <div class="">...</div>
+			<p>I try to make some good oss like Wire through contribution.<br>Would you join me?<br>Thank you for your visit.</p>
                     </div>
                 </div>
                 <!-- If we need pagination -->
@@ -92,6 +99,10 @@
                 navigation: {
                   nextEl: '.swiper-button-next',
                   prevEl: '.swiper-button-prev',
+                },
+                keyboard: {
+                    enabled: true,
+                    onlyInViewport: false,
                 },
             });
         });
