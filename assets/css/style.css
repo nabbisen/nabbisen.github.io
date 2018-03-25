@@ -10,3 +10,7 @@ html body {
     text-align: left;
 }
 
+.swiper-slide .list pre {
+    margin: 0em;
+}
+
