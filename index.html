@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Heddi Nabbisen</title>
     <link rel="icon" href="assets/img//favicon.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.1/spectre.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.1/spectre.min.css" integrity="sha256-3bOqkUKlAH+YSBX+g4Op1ryi42nxlJb2gCWyMLSVNYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css" integrity="sha256-ZJU9LHiXplVitXXeN3ayWdMYFZEJGfgq5AA1+SNyGIc=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" integrity="sha256-00w68NO3TLuHjKRHJmjrrgJBDtG/6OhbJEu1gtHcsuo=" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 </head>
-<body class="text-center">
+<body class="text-center animated fadeIn init">
     <header>
     </header>
     <main>
@@ -23,10 +24,9 @@
                     <!-- Slides -->
                     <div id="home" class="swiper-slide">
                         <h2>Heddi Nabbisen</h2>
-                        <h4>Hello, World.</h4>
-                        <img class="circle swiper-lazy" data-src="assets/img/hello-desert.jpg">
-                        <div class="swiper-lazy-preloader"></div>
-                        <div class="text-left">
+                        <h4 class="animated bounceIn hello-world">Hello, World.</h4>
+                        <img class="circle" src="assets/img/hello-desert.jpg">
+                        <div class="text-left animated bounceIn init">
                             <div class="columns column col-2 col-sm-4 col-mx-auto">
                                 <i class="fas fa-fw fa-map-marker-alt"></i>
                                 <div class="link text-center"><a href="http://com.Website">nabekobo</a></div>
@@ -48,8 +48,7 @@
                     <div id="overview" class="swiper-slide">
                         <h2>Heddi Nabbisen</h2>
                         <h4>Greeting</h4>
-                        <img class="circle swiper-lazy" data-src="assets/img/my-dream.jpg">
-                        <div class="swiper-lazy-preloader"></div>
+                        <img class="circle" src="assets/img/my-dream.jpg">
                         <div>With a cool brain and a warm heart,<br>I'll be your partner as:</div>
                         <div class="text-left">
                             <div class="columns column col-4 col-md-5 col-sm-9 col-mx-auto">
@@ -69,8 +68,7 @@
                     <div id="mind" class="swiper-slide">
                         <h2>Heddi Nabbisen</h2>
                         <h4>Mind & Ideas</h4>
-                        <img class="circle swiper-lazy" data-src="assets/img/lie-down-on-desert.jpg">
-                        <div class="swiper-lazy-preloader"></div>
+                        <img class="circle" src="assets/img/lie-down-on-desert.jpg">
                         <p>
                             I believe<br>we'll make our society so much better.<br>
                             <br>
@@ -80,8 +78,7 @@
                     <div id="skill" class="swiper-slide">
                         <h2>Heddi Nabbisen</h2>
                         <h4>Skillset</h4>
-                        <img class="circle swiper-lazy" data-src="assets/img/be-happy.jpg">
-                        <div class="swiper-lazy-preloader"></div>
+                        <img class="circle" src="assets/img/be-happy.jpg">
                         <div>Solutions via server building, network management, making apps are avairable.</div>
                         <div class="text-left">
                             <div class="columns column col-4 col-md-7 col-sm-12 col-mx-auto">
@@ -98,8 +95,7 @@
                     <div id="history" class="swiper-slide">
                         <h2>Heddi Nabbisen</h2>
                         <h4>History</h4>
-                        <img class="circle swiper-lazy" data-src="assets/img/restaurant.jpg">
-                        <div class="swiper-lazy-preloader"></div>
+                        <img class="circle" src="assets/img/restaurant.jpg">
                         <p>
                             From Japan with appreciation;<br>
                             To the world with hope.
@@ -108,8 +104,7 @@
                     <div id="recent" class="swiper-slide">
                         <h2>Heddi Nabbisen</h2>
                         <h4>Recently</h4>
-                        <img class="circle swiper-lazy" src="assets/img/sunset-mountains.jpg">
-                        <div class="swiper-lazy-preloader"></div>
+                        <img class="circle" src="assets/img/sunset-mountains.jpg">
                         <p>
                         I try to make good oss apps like Wire messenger more popular through contribution.<br>
                         I hope we share good things with each other.<br>
@@ -126,11 +121,11 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="animated bounceIn init">
         <div><i class="far fa-copyright"></i> 2018</div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js" integrity="sha256-oOr2zZ8J4O0S4/qLzjejRaybnfoo1dMwxrMOuFyToLU=" crossorigin="anonymous"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function(){
             //initialize swiper when document ready
@@ -140,9 +135,6 @@
                 speed: 800,
                 loop: true,
                 effect: 'cube',
-                // Lazy load
-                preloadImages: false,
-                lazy: true,
     
                 // If we need pagination
                 pagination: {
