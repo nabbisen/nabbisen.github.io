@@ -1,16 +1,12 @@
-html body {
-    text-align: center;
-}
-
 .swiper-slide img {
     height: 40vh;
 }
 
-.swiper-slide .list {
-    text-align: left;
+.swiper-slide .link {
+    width: 75%;
 }
 
-.swiper-slide .list pre {
+.swiper-slide pre {
     margin: 0em;
 }
 
