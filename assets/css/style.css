@@ -6,7 +6,7 @@ html body {
     height: 40vh;
 }
 
-.swiper-slide ul {
+.swiper-slide .list {
     text-align: left;
-    margin-top: 0em;
 }
+
