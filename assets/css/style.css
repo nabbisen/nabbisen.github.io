@@ -1,3 +1,16 @@
+@keyframes init-on-load {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+body {
+  animation: 3s ease-out 0s 1 init-on-load;
+}
+
 .swiper-slide img {
     height: 40vh;
 }
