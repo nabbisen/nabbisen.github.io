@@ -8,7 +8,10 @@
 }
 
 body {
-  animation: 3s ease-out 0s 1 init-on-load;
+  animation: 2s ease-out 0s 1 init-on-load;
+  -webkit-animation: 2s ease-out 0s 1 init-on-load;
+  -moz-animation: 2s ease-out 0s 1 init-on-load;
+  -ms-animation: 2s ease-out 0s 1 init-on-load;
 }
 
 .swiper-slide img {
